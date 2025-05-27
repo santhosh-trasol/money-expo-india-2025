@@ -74,6 +74,14 @@ body {
     font-family: var(--font-Inter);
 }
 
+.web-view {
+    display: block;
+}
+
+.mobile-view {
+    display: none;
+}
+
 section {
     overflow: hidden;
 }
@@ -689,12 +697,14 @@ p {
 } */
 
 .Banner-Section .bnr-common-title {
-    gap: 1.5rem;
+    gap: 1rem;
+    flex-direction: column;
+
 }
 
 .bnr-common-title {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     gap: 15px;
     margin: 5px 0px 1rem;
@@ -788,6 +798,7 @@ p {
 }
 
 /* animate-text-hidden-section-styles */
+
 .Banner-Section .animated-text::before,
 .stock-market .animated-text::before,
 .counter-section-outer .animated-text::before,
@@ -1208,7 +1219,7 @@ header #Primary-menu .main-menu .sub-menu {
     inset: 55px auto auto 0px !important;
     transition: .4s ease-in-out;
     visibility: hidden;
-    background-color: var(--color-Blue);
+    background-color: var(--color-Dark-Blue);
     min-width: 230px;
     max-width: 250px;
     width: 100%;
@@ -1228,7 +1239,7 @@ header #Primary-menu .main-menu:hover .sub-menu {
     pointer-events: auto;
 }
 
-header #Primary-menu .main-menu .sub-menu li {
+/* header #Primary-menu .main-menu .sub-menu li {
     list-style: none;
     display: block;
     padding: 0px 10px;
@@ -1250,6 +1261,12 @@ header #Primary-menu .main-menu .sub-menu li:hover::before {
     opacity: 1;
     z-index: 1;
     visibility: visible;
+} */
+
+header #Primary-menu .main-menu .sub-menu li {
+    display: block;
+    padding: 0;
+    margin-left: 0px;
 }
 
 header #Primary-menu .main-menu .sub-menu li a {
@@ -1257,21 +1274,24 @@ header #Primary-menu .main-menu .sub-menu li a {
     font-weight: 500;
     font-size: 14px;
     display: block;
-    padding: 10px 5px;
+    padding: 10px;
     white-space: wrap;
 }
 
 header #Primary-menu .main-menu .sub-menu li a:hover,
 header #Primary-menu .main-menu .sub-menu li a:focus {
-    background: var(--color-transparent);
-    color: var(--color-Pink);
+    background: var(--color-Pink);
+    color: #fff;
 }
 
 a.header-login-btn {
     padding: .5rem 1.5rem;
-    background: linear-gradient(45deg, #023b6d, #f8224994);
+    /* background: linear-gradient(45deg, #023b6d, #f8224994); */
+    background: var(--color-Electric-Yellow);
     border-radius: 0px;
     box-shadow: 3px 3px 0px #000;
+    color: #000 !important;
+    font-weight: 500 !important;
 }
 
 a.header-login-btn:hover {
@@ -1409,7 +1429,7 @@ header .Mobile-Header {
     height: 100%;
     width: 100%;
     max-width: 350px;
-    background: var(--color-Blue);
+    background: var(--color-Dark-Blue);
     padding: 25px 20px 60px;
     transition: left .4s ease-in-out;
     overflow-y: auto;
@@ -3691,13 +3711,13 @@ header .Mobile-Header .Mbl-nav .Mbl-menu .Mblmenu-collapse a:hover::before {
     background: radial-gradient(circle, rgb(3, 0, 100) -56%, rgba(0, 0, 0, 1) 100%);
 }
 
-.India-Speaker-Section .India-Speakers {
+/* .India-Speaker-Section .India-Speakers {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px !important;
     margin-top: 25px;
-}
+} */
 
 .India-Speaker-Section .India-Speaker-Title .bnr-common-title h1 {
     background: var(--color-Ghost-White);
@@ -3720,9 +3740,9 @@ header .Mobile-Header .Mbl-nav .Mbl-menu .Mblmenu-collapse a:hover::before {
 }
 
 .India-Speaker-Section .India-Speaker-card {
-    flex: 1 1 18%;
-    /* 4 items per row */
-    max-width: 18%;
+    /* flex: 1 1 18%; */
+    /* max-width: 18%; */
+    padding: 1rem;
 }
 
 .India-Speaker-Section .India-Speaker-item {
@@ -3776,22 +3796,28 @@ header .Mobile-Header .Mbl-nav .Mbl-menu .Mblmenu-collapse a:hover::before {
     z-index: 15;
     padding: 13px 14px;
     width: 100%;
-    height: 102px;
+    /* height: 102px; */
     background: rgb(27, 27, 27, .5);
     text-align: center;
     transition: all 0.3s 0.1s ease-out;
-
+    /* place-content: center; */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .India-Speaker-Section .India-Speaker-item .India-Spkr-cont img {
-    width: 40%;
+    width: 30%;
 }
 
 
 .India-Speaker-Section .India-Speaker-item .India-Spkr-cont h3 {
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     overflow: hidden;
     background: var(--color-white);
     -webkit-background-clip: text;
@@ -3831,6 +3857,48 @@ header .Mobile-Header .Mbl-nav .Mbl-menu .Mblmenu-collapse a:hover::before {
 
 .India-Speaker-Section .India-Speaker-item .India-Spkr-cont .India-Spkr-description {
     display: none;
+}
+
+/* ------ Slick Buttons ------*/
+.India-Speaker-Section .slick-prev::before,
+.India-Speaker-Section .slick-next::before {
+    content: "";
+    background-image: url(../../image/SVGs/Spkr-RightArrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.India-Speaker-Section .slick-prev::before {
+    transform: rotate(180deg);
+}
+
+.India-Speaker-Section .slick-prev,
+.India-Speaker-Section .slick-next {
+    width: 30px;
+    height: 40px;
+}
+
+/* .India-Speaker-Section .slick-prev {
+    left: -10px;
+}
+
+.India-Speaker-Section .slick-next {
+    right: -10px;
+} */
+
+
+.India-Speaker-Section .view-all-btn-section {
+    position: relative;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.India-Speaker-Section .view-all-btn-section .button-outline {
+    width: 155px;
 }
 
 /* ------ Speaker Modal ------*/
@@ -4139,8 +4207,7 @@ header .Mobile-Header .Mbl-nav .Mbl-menu .Mblmenu-collapse a:hover::before {
     color: #EFA506;
 }
 
-.Venue-Section .Venue-Left .Venue-address p,
-.Venue-Section .Venue-Left .Venue-address a {
+.Venue-Section .Venue-Left .Venue-address p {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 0px;
@@ -4149,6 +4216,17 @@ header .Mobile-Header .Mbl-nav .Mbl-menu .Mblmenu-collapse a:hover::before {
     padding-bottom: 12px;
     gap: 10px;
     color: #f6f6f6;
+}
+
+.Venue-Section .Venue-Left .Venue-address p span {
+    width: 70px;
+    position: relative;
+}
+
+.Venue-Section .Venue-Left .Venue-address p span::after {
+    position: absolute;
+    content: ":";
+    right: 5px;
 }
 
 .Venue-Section .Venue-Left .Venue-address p i,
@@ -4500,12 +4578,6 @@ header .Mobile-Header .Mbl-nav .Mbl-menu .Mblmenu-collapse a:hover::before {
 
     }
 
-    /* Speaker-section */
-    .India-Speaker-Section .India-Speaker-card {
-        flex: 1 1 23%;
-        max-width: 23%;
-    }
-
     /*--------------------------------------------------------------
        End Home Page
     --------------------------------------------------------------*/
@@ -4572,7 +4644,13 @@ header .Mobile-Header .Mbl-nav .Mbl-menu .Mblmenu-collapse a:hover::before {
 /*-----------  max-width: 992px  -----------*/
 @media (max-width: 992px) {
 
+    .button-outline {
+        display: none;
+    }
 
+    .Hdr-Webbtn .White-btn {
+        background-color: var(--color-Blue) !important;
+    }
 
     /* ------  Section Buttons  ------ */
     .Section-btn {
@@ -4616,7 +4694,7 @@ header .Mobile-Header .Mbl-nav .Mbl-menu .Mblmenu-collapse a:hover::before {
     }
 
     .animated-text .letter {
-        font-size: 58px;
+        font-size: 3rem;
         line-height: 70px;
     }
 
@@ -4884,10 +4962,6 @@ header .Mobile-Header .Mbl-nav .Mbl-menu .Mblmenu-collapse a:hover::before {
     }
 
     /* India-Speaker-Section */
-    .India-Speaker-Section .India-Speaker-card {
-        flex: 1 1 26.3%;
-        max-width: 26.3%;
-    }
 
     .India-Speaker-Section .India-Speaker-Title .bnr-common-title h1 {
         font-size: 48px;
@@ -4935,7 +5009,17 @@ header .Mobile-Header .Mbl-nav .Mbl-menu .Mblmenu-collapse a:hover::before {
 ---------------------------------*/
 @media (max-width: 767px) {
 
+    .web-view {
+        display: none;
+    }
 
+    .mobile-view {
+        display: block;
+    }
+
+    .button-outline {
+        display: none;
+    }
 
     /* ------  Back to Top Section  ------ */
     .ScrollTop-Section {
