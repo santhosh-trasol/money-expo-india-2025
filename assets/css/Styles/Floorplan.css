@@ -1,0 +1,336 @@
+  /* map styles */
+  
+.floor-container1{
+  background-color: black;
+}
+.floor-plan-box1{
+  display: flex;
+  max-width: 1600px;
+  margin: auto;
+ box-shadow: 0 0px 10px var(--color-orange);
+ overflow: hidden;
+}
+.viewer-container {
+  position: relative;
+  width: 100%; /* Set container width to 70% */
+  height: auto; /* Let the height adjust automatically based on the image's aspect ratio */
+  overflow: hidden;
+}
+#floor-plan {
+  width: 100%; /* Make sure the image width fills the container */
+  height: auto; /* Maintain the aspect ratio of the image */
+  transform-origin: center;
+  cursor: grab;
+  transition: transform 0.2s ease;
+  position: relative; /* Change to relative to prevent overflow */
+}
+.map-controls {
+ position: absolute;
+ left: 60px;
+ top: 50px;
+ 
+}
+.map-controls button {
+  padding: 3px 8px;
+  border: 0.1px solid rgba(128, 128, 128, 0.514);
+  cursor: pointer;
+  font-size: 14px;
+}
+.map-controls button i{
+  font-size: 10px;
+}
+.floor-plan-l{
+  position: relative;
+}
+.map-controls{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+/* Floor-plan form style */
+
+.floor-plan-r {
+  padding: 20px;
+  border: none;
+  height: 1000px;
+  position: relative;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.9), 
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('https://imenco.no/wp-content/uploads/2024/02/subsea-expo.jpg'); 
+  background-size: cover; 
+  background-position: center;
+}
+
+.floor-plan-r form input{
+  margin: 0;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  padding: 10px;
+ outline: none;
+  background-color: white;
+  font-family: var(--font-Inter);
+}
+.floor-plan-r form button{
+  border-radius: 0px 10px 10px 0px;
+  background-color: var(--color-orange);
+  border: none;
+  width: 40px;  padding: 10px;
+  cursor: pointer;
+}
+.floor-plan-r form button i{
+  color:var(--color-white);
+}
+.floor-plan-r .floor-search-form{
+  display: flex;
+  margin-bottom: 8px;
+}
+.floor-plan-r-inner{
+  height: 740px;
+  overflow-y: scroll;
+  transition: 1s;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+/* Scrollbar */
+.floor-plan-r-inner::-webkit-scrollbar {
+  width: 5px; 
+  height: 12px; 
+  border-radius: 5px;
+  background-color: black;
+}
+.floor-plan-r-inner::-webkit-scrollbar-thumb {
+  background: #555;
+  background-clip: padding-box; 
+  border-radius: 5px;
+}
+.floor-plan-r-inner::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
+.floor-plan-r-inner::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
+
+
+
+.modal-f {
+  display: none; /* Hidden by default */
+  width: 100%;;
+  justify-content: center;
+  align-items: center;
+  z-index: 700;
+  position: relative;
+  margin-top: 30px;
+}
+.modal-ws{
+  margin-top: 10px;
+}
+.modal-inner p{
+  margin: 0;
+  font-family: var(--font-Inter);
+  color: var(--color-white);
+}
+.modal-inner h4{
+  margin: 0;
+  font-family: var(--font-Inter);
+  color: var(--color-orange);
+}
+.modal-inner a{
+  font-family: var(--font-Inter);
+  color: var(--color-white);
+}
+
+
+.flrp-close-btn {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+ color: var(--color-orange);
+  border-radius: 20%;
+  border: none;
+  padding: 0px 8px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+/* Hide all content except modal when active */
+.hide-content {
+  display: none;
+}
+.link-container a {
+  display: block;
+  margin: 5px 0;
+  
+}
+
+.floor-check-form{
+  transition: 1s;
+  height: 156px;
+  overflow: hidden;
+}
+.sponcer-lvl-container{
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+}
+.sp-lvl-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+  position: relative;
+}
+.sp-lvl-inner label{
+  font-family: var(--font-Inter);
+  font-size: 17px;
+  color: var(--color-orange);
+}
+.sponcer-lvl-container ul li{
+  list-style-type: none;
+  font-family: var(--font-Inter);
+  color: var(--color-white);
+}
+.sponcer-lvl-container ul{
+  padding-left: 10px;
+  margin: 0;
+}
+.sponcer-li-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px 0px 7px;
+  color: var(--color-white);
+  position: relative;
+}
+.sponcer-li-head p{
+  margin: 0;
+  font-family: var(--font-Inter);
+  color: var(--color-orange);
+}
+.modal-ov-img{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.modal-ov-img img{
+  height: 100px;
+  width: 100px;
+}
+.modeOPCl{
+  height: 30px !important;
+  overflow: hidden ;
+  transition: 1s;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+ 
+}
+
+.link-container a{
+  color: var(--color-white);
+  font-family: var(--font-Inter);
+}
+
+#sponcer-lvl-op{
+  margin: 0;
+}
+
+
+#sponcer-lvl-op{
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--color-orange);
+  position: absolute;
+  left: 240px;
+}
+#sponcer-li-oc{
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  left: 240px;
+}
+.banner-2-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (max-width:1440px) {
+  .floor-plan-r{
+    height: 800px;
+  }
+  .floor-plan-r-inner{
+    height: 542px;
+  }
+  
+}
+
+
+@media screen and (max-width:1100px) {
+  .floor-plan-r-inner{
+    height:342px;
+    overflow-y: scroll;
+    transition: 1s;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+  }
+  .floor-plan-r {
+    height: 600px;
+   
+  }
+  
+}
+
+@media screen and (max-width:992px){
+  #searchInput{
+    max-width: 180px;
+    }
+    .modal-ov-img img{
+      width: 70px;
+      height: 70px;
+    }
+    #sponcer-li-oc{
+      left: 180px;
+    }
+    #sponcer-lvl-op{
+      left: 180px;
+    }
+    .map-controls {
+      position: absolute;
+      left: 30px;
+      top: 30px;
+  }
+  .map-controls button {
+    padding: 1px 5px;
+   
+}
+}
+@media screen and (max-width:768px) {
+
+  .sp-lvl-inner label{
+      font-size: 16px;
+  }
+  .floor-plan-r{
+    display: none;
+  }
+
+  .map-controls {
+    left: 25px;
+    top: 25px;
+}
+
+
+}
+@media screen and (max-width:576px){
+  .map-controls { 
+    left: 20px;
+    top: 20px;
+}
+.map-controls button{
+  padding: 0px 2px;
+  }
+}

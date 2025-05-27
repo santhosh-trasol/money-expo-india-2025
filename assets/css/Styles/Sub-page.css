@@ -1,0 +1,1854 @@
+/* All Page Common Banner Section */
+.All-Page-Banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.All-Page-Banner .Banner-Img {
+    max-height: 400px;
+    min-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.All-Page-Banner .BnrPage-Inner {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -60%);
+    text-align: center;
+    width: 100%;
+}
+
+.All-Page-Banner .BnrPage-Title h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: var( --font-Inter);
+    margin-bottom: 10px;
+}
+
+/* End All Page Common Banner Section */
+
+/* sponsor-page */
+
+
+.Sponsor-title .bnr-common-title{
+    margin-bottom: 20px;
+}
+.Elite-sponsor h1{
+color:var(--color-Pink);
+font-size: 32px;
+
+}
+.Elite-sponsor .Sponsor-title{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+}
+.Elite-sponsor .Sponsor-title .Sponsor-Titleline{
+    flex: 1;
+    height: 2px;    
+    background: var(--color-Pink);
+    display: inline-block;
+}
+.Elite-sponsor .row{
+    margin: 40px 0px;
+   gap:40px 0px;
+    justify-content: center;
+}
+.Elite-sponsor .Sponsor-card{
+    background: var(--color-white);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:80px;
+        width: 100%;
+        padding: 0px 5px;
+        position:relative;
+
+    }
+    .Elite-sponsor .Spnr-Card-Site{
+       
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: var(--color-Blue);
+            color:var(--color-white);
+           transform: scale(0.6);
+            opacity: 0;
+            transition: 0.3s;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .Elite-sponsor .Sponsor-card:hover .Spnr-Card-Site{
+            opacity: 1;
+            transform: scale(1);
+        }
+        .Spnr-Card-Site h4{
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        .Spnr-Card-Site a{
+            background: var(--color-black);
+            padding:5px;
+            font-size: 10px;
+               
+        }
+        .Spnr-Card-Site p{
+            font-size: 10px;
+            margin-bottom: 0px;
+            color:var(--color-white);
+        }
+
+        /* WhyAttend */
+        .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card .Who-Will-Meet-img{
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+        .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card .Who-Will-Meet-img img{
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card{
+            height: 150px;
+            max-width: 250px;
+            position: relative;
+            background-color: black;
+            border-radius: 20px 20px 20px 0px;
+            z-index: 2;
+        }
+        .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card.c-1{
+            background-color: #EFA506;
+            transform: translateY(-50px);
+        }
+        .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card.c-1::before{
+           
+             border-left: 50px solid #EFA506;
+            border-right: 0px solid transparent;
+            border-bottom: 200px solid transparent;
+        }
+        .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card.c-2{
+            background-color: #32354b;
+            transform: translateY(50px);
+        }
+        .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card.c-2::before{
+           
+             border-left: 50px solid #32354b;
+            border-right: 0px solid transparent;
+            border-bottom: 200px solid transparent;
+        }
+        .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card.c-3{
+            background-color: rgb(135, 196, 149);
+        }
+        .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card.c-3::before{
+           
+             border-left: 50px solid rgb(135, 196, 149);
+            border-right: 0px solid transparent;
+            border-bottom: 200px solid transparent;
+        }
+        .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card.c-4{
+            background-color: #FF2D55;
+            transform: translateY(-50px);
+        }
+        .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card.c-4::before{
+           
+             border-left: 50px solid #FF2D55;
+            border-right: 0px solid transparent;
+            border-bottom: 200px solid transparent;
+        }
+        .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card.c-5{
+            background-color: rgb(78, 122, 83);
+            transform: translateY(50px);
+        }
+        .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card.c-5::before{
+           
+             border-left: 50px solid rgb(78, 122, 83);
+            border-right: 0px solid transparent;
+            border-bottom: 200px solid transparent;
+        }
+        .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            bottom: -100%;
+            width: 0;
+            height: 1px;
+            z-index: 1;
+        }
+        
+        .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card .Who-Will-Meet-card-content{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card .Who-Will-Meet-card-content p{
+            font-size: 17px;
+            text-align: center;
+            color: white;
+            z-index: 3;
+        }
+        .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card .Who-Will-Meet-card-content p span{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .Who-Will-Meet .container{
+            max-width: 1300px;
+        }
+        
+        .Who-Will-Meet{
+            background: linear-gradient(rgb(0 0 0 / 73%), rgb(0 0 0 / 68%)), url(../../image/Who-Will-meet/road.png);
+            background-size: cover;
+            background-position: center;
+            min-height: 600px;
+        }
+        
+        .Who-Will-Meet .bnr-common-title h1{
+            background-color: var(--color-Ghost-White);
+        }
+        
+        
+        .Who-Will-Meet .animated-text .letter {
+              font-size: 60px;
+              line-height: 75px;
+            }
+            .key-highlights .animated-text .letter {
+              font-size: 60px;
+              line-height: 75px;
+            }
+         .Who-Will-Meet-title-txt{
+                font-size: 16px;
+                text-align: center;
+                color: white;
+            }
+        
+        .Who-Will-Meet .Who-Will-Meet-title{
+            margin-bottom: 50px;
+        }
+        
+        
+        
+        /* Key Highlights to Explore */
+        .key-highlights .key-highlights-inner .key-highlights-card .key-highlights-card-img img{
+            width: 100%;
+            padding: 10px;
+        }
+        .key-highlights .key-highlights-inner .key-highlights-card .key-highlights-card-content{
+            width: 100%;
+            height: 100%;
+        }
+        .key-highlights .key-highlights-inner .key-highlights-card .key-highlights-card-img{
+            width: 70px;
+        }
+        .key-highlights .container{
+            max-width: 1300px;
+        }
+        .key-highlights .key-highlights-inner .key-highlights-card{
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+           min-height: 125px;
+            padding: 20px;
+           margin-bottom: 25px;
+           border-radius: 5px;
+           box-shadow: rgb(255 246 246 / 28%) 0px -50px 36px -28px inset;
+            background-color: #0d1028eb;
+            transition: 0.5s;
+        }
+        .key-highlights .key-highlights-inner .key-highlights-card:hover{
+            transform: translateX(5px);
+            background-color: var(--color-Dark-Blue);
+        }
+        .key-highlights .key-highlights-inner .key-highlights-card p{
+            color: white;
+            margin: 0;
+            font-family: var(--font-Roboto);
+           
+        }
+        .key-highlights .key-highlights-inner .key-highlights-card h3{
+            color: white;
+            margin: 0;    
+        }
+        .key-highlights .Who-Will-Meet-title-txt {
+            font-size: 16px;
+            text-align: center;
+            color: black;
+        }
+        
+        
+        .key-highlights .Who-Will-Meet-title{
+            margin-bottom: 40px;
+        }
+        .key-highlights .Who-Will-Meet-title .bnr-common-title h1{
+            background-color: var(--color-Blue);
+        }
+        
+        /* event-feature */
+        
+        .event-feature  .event-feature-right{
+            height: 100%;
+            width: 100%;
+            background-image: url(../../image/Why-to-visit/why-v-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+           display: flex;
+        
+        }
+        .event-feature .event-feature-right .event-feature-right-gal-img-2{
+            margin-top:30px;
+        }
+        
+        .event-feature .event-feature-container .event-feature-card {
+            position: relative;
+            max-width: 270px;
+            width: 100%;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
+            z-index: 2;
+            overflow: hidden;
+        }
+        
+        /* Gradient border glow effect */
+        .event-feature .event-feature-container .event-feature-card::before {
+             content: "";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgb(247, 35, 74), rgb(247, 35, 74));
+            z-index: -1;
+            filter: blur(15px);
+            opacity: 0.6;
+            transform: scale(1.1);
+            border-radius: 15px;
+        }
+        
+        /* Hover transform with 3D pop */
+        .event-feature .event-feature-container .event-feature-card:hover {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 12px 35px #0d102870;
+        }
+        
+        /* Title Style */
+        .event-feature .event-feature-container .event-feature-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: var(--color-Ghost-White);
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Paragraph Style */
+        .event-feature .event-feature-container .event-feature-card p {
+            font-size: 13px;
+            color: var(--color-text);
+            text-align: center;
+            line-height: 1.5;
+        }
+        
+        .event-feature .event-feature-container{
+            display: flex;
+            gap: 20px;
+            padding: 25px 0;
+            flex-wrap:wrap;
+        }
+        .event-feature .event-feature-left-content{
+            
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+        .event-feature .container{
+            max-width: 1300px;
+        }
+        .event-feature{
+            position: relative;
+        }
+        .event-feature::before{
+            content: "";
+            width: 55.2%;
+            height: 100%;
+            background-color: rgb(242 237 237);
+            position: absolute;
+            left: 0;
+            z-index: -1;
+        
+        }
+        
+        .event-feature .event-feature-title-top .bnr-common-title h1{
+            background-color: var(--color-Blue);
+        }
+        
+        .event-feature .event-feature-title-top .animated-text .letter{
+            font-size: 60px;
+        }
+        .event-feature .event-feature-title-top .bnr-common-title{
+            justify-content: left;
+        }
+        .why-attend-bnr{
+            position: relative;
+        }
+        .why-attend-bnr::before{
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: #0d102880;
+           position: absolute;
+           z-index:2;
+        }
+        
+        .event-feature .event-feature-left-content .event-feature-title{
+            font-family: var(--font-Roboto);
+        }
+        
+        .event-feature .event-feature-title-bottom h3{
+                position: relative;
+            font-size: 22px;
+            line-height: 36px;
+            color: var( --color-Pink);
+            margin-bottom: 0px;
+            font-family: var(--font-Inter);
+            font-weight: 600;
+        }
+
+        /* FAQ */
+         .Faq-Section {
+            background-image: url(./assets/image/image-gallery-index-section/manbg1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            margin: 40px 50px 0px;
+        }
+
+        .Faq-Section .bnr-common-title h1 {
+            font-size: 55px;
+            background-color: var(--color-Blue);
+
+        }
+
+        .Faq-Section .bnr-common-title .animated-text .letter {
+            font-size: 55px;
+        }
+
+        .Faq-Section .faq-slider .row {
+            padding: 30px 0px;
+        }
+
+        .Faq-Section .accordion-col {
+            padding: 0px 20px;
+        }
+
+        .Faq-Section .accordion-inner {
+            padding-bottom: 30px;
+
+
+        }
+
+
+        .faq-sec-inner .faq-inner-btn {
+            background: none;
+            margin: 10px;
+            width: 23%;
+            height: 60px;
+        }
+
+        .Faq-Section .nav-tabs {
+            gap: 12px 15px;
+            justify-content: center;
+            overflow: hidden;
+            border: 0px;
+            margin: 30px 0px 0px;
+        }
+
+
+
+        .Faq-Section .nav-tabs .nav-link {
+            color: var(--color-black);
+            border: 2px solid black;
+            width: 250px;
+            border-radius: 10px;
+            min-height: 60px;
+            height: 100%;
+            font-size: 16px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .Faq-Section .nav-tabs .nav-link::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            background: var(--color-Pink);
+            width: 100%;
+            height: 3px;
+            z-index: 5;
+            display: none;
+        }
+
+        .Faq-Section .nav-tabs .nav-link.active {
+            border-bottom: 2px solid var(--color-Pink);
+            background: var(--color-Blue);
+            color: white;
+        }
+
+        .Faq-Section .nav-tabs .nav-link.active::before {
+            display: block;
+        }
+
+
+        .Faq-Section .accordion-button::after {
+            content: '\f067';
+            font-family: 'FontAwesome';
+            font-size: 20px;
+            background-image: none;
+            color: var(--color-Blue);
+        }
+
+        .Faq-Section .accordion-button:not(.collapsed)::after {
+            background-image: none;
+            content: '\f068';
+            color: var(--color-Pink);
+        }
+
+        .Faq-Section .accordion-flush .accordion-item .accordion-button {
+            color: var(--color-Pink);
+            position: relative;
+            border-bottom: 2px solid #7070702b;
+            border-radius: 20px;
+
+        }
+
+        .Faq-Section .accordion-flush .accordion-item {
+
+            border: none;
+            padding: 0px;
+            border-radius: 50px;
+        }
+
+        .Faq-Section .accordion-flush .accordion-item .accordion-body {
+            border-bottom: 2px solid #7070702b;
+
+        }
+
+        .Faq-Section .accordion-flush .accordion-item .accordion-body p {
+            color: var(--color-black);
+            font-family: var(--font-Roboto);
+        }
+
+        .Faq-Section .accordion-button {
+            font-weight: 500;
+            padding: 25px;
+            font-size: 20px;
+            font-family: var(--font-Poppins);
+
+        }
+
+
+        .Faq-Section .accordion-item p.Sub-Title {
+            font-size: 18px;
+            margin-bottom: 15px;
+            margin-top: 25px;
+            color: var(--color-orange);
+        }
+
+        .Faq-Section .accordion-item p b.Sub-Title {
+            color: var(--color-orange);
+        }
+
+        .Faq-Section .accordion {
+            --bs-accordion-btn-focus-box-shadow: none;
+
+        }
+
+
+        .Faq-Section .faq-sec-inner .faq-slider h4 {
+
+            color: var(--color-Pink);
+            font-size: 25px;
+            padding: 20px 0px;
+        }
+
+        .Faq-Section .accordion-flush .accordion-item .accordion-button.collapsed {
+            color: var(--color-Blue);
+            font-size: 20px;
+
+        }
+      
+        /* Become Sponsor */
+        .Exhibit-Section {
+             margin-top: 50px;
+            background: radial-gradient(circle, rgba(15, 34, 66, 1) -70%, rgba(0, 0, 0, 1) 100%);
+        }
+
+        .Exhibit-Section .Exhibit-inner {
+            padding: 80px 50px;
+            background: #e29a0033;
+            backdrop-filter: blur(50px);
+            border: 2px solid rgb(255 255 255 / 14%);
+            border-radius: 25px;
+        }
+
+        .Exhibit-Section .row {
+            row-gap: 30px;
+        }
+
+        .Exhibit-Section .Section-title {
+            margin-bottom: 30px;
+        }
+
+        .Exhibit-Section .Section-title .bnr-common-title h1 {
+            font-size: 55px;
+
+
+        }
+
+        .Exhibit-Section .Section-title .bnr-common-title {
+            justify-content: left;
+            margin-bottom: 15px;
+        }
+
+        .Exhibit-Section .Section-title .bnr-common-title .animated-text .letter {
+            font-size: 40px;
+        }
+
+        .Exhibit-Section .Section-title p {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--color-white);
+            text-align: left;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px 15px;
+            border-radius: 25px;
+            font-family: var(--font-Roboto);
+        }
+
+        .Exhibit-Section .Exhibit-cont p {
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--color-white);
+            text-align: left;
+            letter-spacing: 0.3px;
+            font-family: var(--font-Roboto);
+        }
+
+        .Exhibit-Section .Section-title p span {
+            background: #023b6d66;
+            border: 1px solid rgb(255 255 255 / 13%);
+            padding: 6px 20px;
+            border-radius: 20px;
+            display: inline-block;
+
+        }
+
+        .Exhibit-Section .row {
+            row-gap: 30px;
+        }
+
+        .Exhibit-Section .Exhbt-card {
+            width: 100%;
+            height: 100%;
+            background: var(--color-transparent);
+            border-bottom: 1px solid #ffffff24;
+            border-radius: 8px;
+            padding: 1.2rem;
+            transition: 0.3s;
+        }
+
+        .Exhibit-Section .Exhbt-card:hover {
+            transition: 0.3s;
+            box-shadow: rgb(200, 75, 75) 0px 8px 35px -7px;
+            transform: perspective(900px) translateY(-3%) rotateX(15deg) translateZ(0);
+        }
+
+        .Exhibit-Section .Exhbt-card img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            margin-bottom: 25px;
+        }
+
+        .Exhibit-Section .Exhbt-card p {
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--color-white);
+            font-family: var(--font-Roboto);
+            margin: 0px;
+        }
+
+        .Exhibit-Section .abt-btn {
+            margin-top: 30px;
+            position: relative;
+            width: 155px;
+        }
+
+        .spnr-register-section .bnr-common-title {
+            justify-content: left;
+            margin-bottom: 20px;
+        }
+
+        .spnr-register-section .bnr-common-title h1 {
+            background: var(--color-Blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 55px;
+
+        }
+        .spnr-register-section .animated-text .letter{
+             font-size: 55px;
+        }
+
+        .spnr-register-section .register-sec-inner {
+            padding: 40px;
+            background: var(--color-Blue);
+            box-shadow: rgb(17 17 26 / 72%) 0px 8px 24px, rgb(17 17 26 / 14%) 0px 16px 56px, rgb(17 17 26 / 13%) 0px 24px 80px;
+        }
+
+        .hs-form-6b522deb-e1a2-4078-8733-5a692722bb28_41e9d0f8-f036-4132-b289-b51f12a40737 .hs-form-field label:not(.hs-error-msg) {
+            color: black !important;
+        }
+
+
+        .sponcer-logo-container {
+            background: black;
+        }
+
+        .sponcer-logo-container .sponcer-section-title {
+            padding-bottom: 50px;
+        }
+
+        .sponcer-logo-container .sponcer-section-title .bnr-common-title h1 {
+            font-size: 55px;
+        }
+
+
+        .sponcer-logo-container .sponcer-logo-box {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px 20px;
+        }
+
+        .sponcer-logo-container .sponcer-logo-box .sp-logo {
+            max-width: 176px;
+            width: 100%;
+        }
+
+        .sponcer-logo-container .sponcer-logo-box .sp-logo img {
+            width: 100%;
+        }
+
+
+        /* Travel-Page */
+         /* discover-section */
+         .discover-section .align {
+            display: flex;
+            align-items: center;
+        }
+
+        .discover-section .bnr-common-title .animated-text {
+            display: block;
+        }
+
+        .discover-section .bnr-common-title .animated-text .letter {
+            font-size: 52px;
+            line-height: 58px;
+        }
+
+        .discover-section .bnr-common-title h1 {
+            font-size: 52px;
+            line-height: 58px;
+            font-family: var(--font-Poppins);
+            color: var(--color-Blue);
+            overflow: hidden;
+            -webkit-text-fill-color: unset;
+        }
+
+        .discover-section .bnr-common-title {
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+
+        .discover-section .animated-text {
+            text-align: left;
+        }
+
+        .discover-section .bnr-common-title .letter {
+            font-size: 50px;
+            line-height: 58px;
+        }
+
+        .discover-section .bnr-common-title {
+            justify-content: left;
+        }
+
+        .discover-section .discover-para {
+            font-size: 18px;
+            color: var(--color-text);
+            text-align: left;
+            font-family: var(--font-Roboto);
+        }
+
+        /* explore-section */
+        .explore-section {
+            position: relative;
+            background-color: var(--color-Ghost-White);
+            overflow: hidden;
+        }
+
+        .explore-section .wave-top-right {
+            position: absolute;
+            width: 320px;
+            opacity: 1.5;
+            z-index: 10;
+        }
+
+        .explore-section .wave-bottom-left {
+            position: absolute;
+            width: 280px;
+            opacity: 1.5;
+            z-index: 10;
+        }
+
+        .explore-section .wave-top-right {
+            top: 0;
+            right: 0;
+        }
+
+        .explore-section .wave-bottom-left {
+            bottom: 0;
+            left: 0;
+            transform: rotate(180deg);
+        }
+
+        .explore-section .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .explore-section .bnr-common-title h1 {
+            font-size: 58px;
+            line-height: 75px;
+            padding: 20px 0;
+            color: var(--color-Blue);
+            font-family: var(--font-Poppins);
+            margin-bottom: 10px;
+            -webkit-text-fill-color: var(--color-Blue)
+        }
+
+        .explore-section .bnr-common-title .letter {
+            font-size: 58px;
+            line-height: 75px;
+        }
+
+        .explore-section .bnr-common-title p {
+            font-size: 18px;
+            color: var(--color-text);
+            text-align: left;
+            font-family: var(--font-Roboto);
+            margin-bottom: 30px;
+        }
+
+        .explore-section .explore-layout {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .explore-section .explore-card {
+            background-color: var(--color-white);
+            border-radius: 8px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            width: calc(25% - 15px);
+            overflow: hidden;
+        }
+
+        .explore-section .explore-card img {
+            width: calc(100% - 20px);
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .explore-section .card-content {
+            padding: 15px;
+        }
+
+        .explore-section .card-content h3 {
+            font-size: 18px;
+            font-family: var(--font-Poppins);
+            color: var(--color-Blue);
+        }
+
+        .explore-section .card-content p {
+            font-size: 15px;
+            font-family: var(--font-Roboto);
+            color: var(--color-text);
+        }
+
+        .explore-section .explore-tip {
+            font-size: 16px;
+            font-family: var(--font-Roboto);
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* transport-section */
+        .transport-section {
+            background-color: var(--color-black);
+        }
+
+        .transport-section .bnr-common-title h1 {
+            font-size: 55px;
+            color: var(--color-white);
+            font-family: var(--font-Poppins);
+            -webkit-text-fill-color: unset;
+            text-align: center;
+            background: none;
+        }
+
+        .transport-section .bnr-common-title .letter {
+            font-size: 55px;
+        }
+
+        .transport-section .transport-text {
+            font-size: 18px;
+            color: var(--color-white);
+            font-family: var(--font-Roboto);
+            text-align: center;
+        }
+
+        .transport-section .transport-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            padding: 30px 0;
+        }
+
+        .transport-section .transport-card {
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            flex: 0 0 calc(33.333% - 13.33px);
+            overflow: hidden;
+        }
+
+        .transport-section .card-air {
+            background-color: var(--color-Blue);
+        }
+
+        .transport-section .card-train {
+            background-color: var(--color-Pink);
+        }
+
+        .transport-section .card-car {
+            background-color: var(--color-Yellow);
+        }
+
+        .transport-section .transport-card img {
+            width: 100%;
+        }
+
+        .transport-section .card-content {
+            padding: 15px;
+        }
+
+        .transport-section .card-content h3 {
+            font-size: 24px;
+            font-family: var(--font-Poppins);
+            color: var(--color-white);
+        }
+
+        .transport-section .card-content p {
+            font-size: 15px;
+            font-family: var(--font-Roboto);
+            color: var(--color-white);
+        }
+
+        /* accommodation-section */
+        .accommodation-section {
+            background: #cbe8e6;
+        }
+
+        .accommodation-section .bnr-common-title h1 {
+            font-size: 55px;
+            line-height: 75px;
+            color: var(--color-Blue);
+            font-family: var(--font-Poppins);
+            overflow: hidden;
+            -webkit-text-fill-color: unset;
+            background: none;
+        }
+
+        .accommodation-section .bnr-common-title .letter {
+            font-size: 55px;
+            line-height: 75px;
+        }
+
+        .accommodation-section .bnr-common-title {
+            margin-bottom: 30px;
+        }
+
+        .accommodation-section .bnr-common-title p {
+            font-size: 18px;
+            color: var(--color-text);
+            text-align: left;
+            font-family: var(--font-Roboto);
+        }
+
+        .accommodation-section .card_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .accommodation-section .card {
+            width: 90%;
+            height: 70px;
+            border-radius: 22px;
+            position: relative;
+            border:none;
+        }
+
+        .accommodation-section .card .card-container {
+            width: 100%;
+            height: 70px;
+            position: relative;
+            background-color: var(--color-white);
+            z-index: 10;
+            border-radius: 10px;
+            padding: 20px 40px 32px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .accommodation-section .card-container h4 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: var(--color-text);
+            font-weight: 500;
+        }
+
+        .accommodation-section .card p {
+            font-size: 17px;
+            color: var(--color-text);
+        }
+
+        .accommodation-section .card::before {
+            position: absolute;
+            content: '';
+            background-color: var(--color-Pink);
+            height: 35px;
+            width: 35px;
+            top: 23px;
+            right: -8px;
+            transform: rotate(45deg);
+            z-index: 10;
+        }
+
+        .accommodation-section .card::after {
+            position: absolute;
+            content: attr(data-label);
+            top: 7px;
+            padding-left: 20px;
+            padding: 6px;
+            right: -16px;
+            width: 200px;
+            background-color: var(--color-Pink);
+            z-index: 12;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 10px;
+            color: var(--color-white);
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .accommodation-section .card.left-ribbon::before {
+            left: -15px;
+            right: auto;
+            top: 13px;
+            height: 47px;
+        }
+
+        .accommodation-section .card.left-ribbon::after {
+            left: -31px;
+            right: auto;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 10px;
+        }
+
+        .accommodation-section .accommodation-tip {
+            font-size: 16px;
+            font-family: var(--font-Roboto);
+            color: var(--color-text);
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* tips-section */
+        .tips-section {
+            background-color: #f2f2f2;
+        }
+
+        .tips-section .align {
+            display: flex;
+            align-items: center;
+        }
+
+        .tips-section .bnr-common-title h1 {
+            font-size: 55px;
+            line-height: 75px;
+            color: var(--color-Blue);
+            font-family: var(--font-Poppins);
+            -webkit-text-fill-color: unset;
+        }
+
+        .tips-section .bnr-common-title .letter {
+            font-size: 55px;
+            line-height: 75px;
+        }
+
+        .tips-section .bnr-common-title {
+            justify-content: left;
+            padding-left: 20px;
+        }
+
+        .tips-section .tips-list {
+            padding: 20px 30px;
+        }
+
+        .tips-section .tips-list li {
+            list-style-type: disc;
+            font-size: 20px;
+            color: var(--color-text);
+            font-family: var(--font-Roboto);
+            line-height: 1.6;
+        }
+
+        .tips-section .tips-images-row {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .tips-section .tips-image {
+            flex: 1 1 30%;
+        }
+
+        .tips-section .tips-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .floorplan{
+            background: var(--color-black);
+        }
+
+
+/* Media Query */
+
+/* whyAttend */
+@media screen and (max-width:1200px){
+.event-feature .event-feature-container .event-feature-card{
+    max-width: 200px;
+padding: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+/* Travel-Page */
+  /* discover-section */
+  .discover-section .bnr-common-title h1 {
+    font-size: 42px;
+}
+
+.discover-section .bnr-common-title .animated-text .letter {
+    font-size: 42px;
+}
+
+/* explore-section */
+.explore-section .bnr-common-title h1 {
+    font-size: 53px;
+}
+
+.explore-section .bnr-common-title .letter {
+    font-size: 53px;
+}
+
+.explore-section .wave-bottom-left {
+    bottom: -30px;
+}
+
+/* transport-section */
+.transport-section .bnr-common-title h1 {
+    font-size: 50px;
+}
+
+.transport-section .bnr-common-title .letter {
+    font-size: 50px;
+}
+
+/* accommodation-section */
+.accommodation-section .bnr-common-title h1 {
+    font-size: 50px;
+}
+
+.accommodation-section .bnr-common-title .letter {
+    font-size: 50px;
+}
+
+/* tips-section */
+.tips-section .bnr-common-title h1 {
+    font-size: 50px;
+}
+
+.tips-section .bnr-common-title .letter {
+    font-size: 50px;
+}
+
+.tips-section .tips-list li {
+    font-size: 18px;
+}
+
+.accommodation-section .card::after {
+    width: 200px;
+}
+
+.accommodation-section .card p {
+    font-size: 17px;
+    color: var(--color-text);
+    width: 82%;
+}
+
+.tips-section .tips-list {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+}
+
+@media (max-width: 1100px) {
+    /* FAQ */
+    .Faq-Section .accordion-flush .accordion-item .accordion-button.collapsed {
+        font-size: 17px;
+    }
+        .Faq-Section .accordion-button{
+                 font-size: 17px;
+            }
+}
+
+@media (max-width:992px){
+    /* FAQ */
+    .Faq-Section .faq-slider .row {
+        padding: 0px;
+    }
+
+    .Faq-Section .bnr-common-title {
+        gap: 8px !important;
+    }
+
+
+    /* whyAttend */
+
+    .event-feature::before{
+        display: none;
+    }
+    .event-feature .event-feature-left-content{
+        background-color: rgb(221, 221, 220);
+    }
+    .event-feature  .event-feature-right{
+   margin-top: 0px;
+
+}
+.event-feature{
+    background-color: rgb(221, 221, 220);
+}
+
+.event-feature .event-feature-container .event-feature-card {
+    max-width: 240px;
+    padding: 20px 10px;
+   
+}
+.event-feature .event-feature-left-content{
+    padding: 30px;
+    border-radius: 10px;
+}
+   
+.Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card.c-2{
+    transform: translateY(-50px);
+    }
+
+       .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card.c-5{
+    transform: translateY(-20px);
+}
+.Who-Will-Meet .Who-Will-Meet-title {
+    margin-bottom: 80px;
+}
+
+
+.key-highlights .key-highlights-inner .key-highlights-card
+ {
+min-height: 155px;
+justify-content: center;
+padding: 20px;
+}
+
+.key-highlights .key-highlights-inner .key-highlights-card .key-highlights-card-img {
+    width: 90px;
+}
+
+/* Travel-Page */
+
+                /* discover-section */
+                .discover-section .bnr-common-title h1 {
+                    font-size: 36px;
+                    line-height: 45px;
+                }
+
+                .discover-section .bnr-common-title .animated-text .letter {
+                    font-size: 36px;
+                    line-height: 45px;
+                }
+
+                .discover-section .discover-para {
+                    font-size: 15px;
+                }
+
+                /* explore-section */
+                .explore-section .explore-card {
+                    width: calc(50% - 10px);
+                }
+
+                .explore-section .bnr-common-title h1 {
+                    font-size: 45px;
+                    line-height: 45px;
+                    padding-bottom: 5px;
+                }
+
+                .explore-section .bnr-common-title .letter {
+                    font-size: 45px;
+                    line-height: 45px;
+                }
+
+                .explore-section .bnr-common-title {
+                    gap: 5px;
+                    margin-bottom: 10px;
+                }
+
+                .explore-section .bnr-common-title .letter {
+                    margin-bottom: 10px;
+                }
+
+                .explore-section .bnr-common-title p {
+                    font-size: 15px;
+                }
+
+                .explore-section .wave-top-right {
+                    width: 280px;
+                }
+
+                .explore-section .wave-bottom-left {
+                    width: 235px;
+                }
+
+                /* transport-section */
+                .transport-section .bnr-common-title h1 {
+                    font-size: 52px;
+                }
+
+                .transport-section .bnr-common-title .letter {
+                    font-size: 52px;
+                }
+
+                .transport-section .transport-text {
+                    font-size: 15px;
+                }
+
+                .transport-section .transport-card {
+                    flex: 0 0 calc(50% - 10px);
+                }
+
+                .transport-section .transport-layout {
+                    justify-content: center;
+                }
+
+                .transport-section .card-content h3 {
+                    font-size: 18px;
+                    font-family: var(--font-Poppins);
+                    color: var(--color-white);
+                }
+
+                /* accommodation-section */
+                .accommodation-section .bnr-common-title h1 {
+                    font-size: 52px;
+                    line-height: 60px;
+                    margin-bottom: 30px;
+                }
+
+                .accommodation-section .bnr-common-title {
+                    margin-bottom: 30px;
+                }
+
+                .accommodation-section .bnr-common-title .letter {
+                    font-size: 52px;
+                    line-height: 60px;
+                }
+
+                .accommodation-section .bnr-common-title p {
+                    font-size: 15px;
+                }
+
+                .accommodation-section .card .card-container {
+                    padding: 20px;
+                }
+
+                .accommodation-section .card p {
+                    width: 75%;
+                }
+
+                /* tips-section */
+                .tips-section .bnr-common-title h1 {
+                    font-size: 42px;
+                    line-height: 60px;
+                }
+
+                .tips-section .bnr-common-title .letter {
+                    font-size: 42px;
+                    line-height: 60px;
+                }
+
+                .tips-section .align {
+                    display: block;
+                }
+
+                .tips-section .tips-images-row {
+                    margin-top: 20px;
+                }
+
+
+}
+@media (max-width:768px){
+    /* All Page Banner Section */
+    .All-Page-Banner .BnrPage-Title h1 {
+        font-size: 30px;
+    }
+
+    /* whyAttend */
+    .Who-Will-Meet .animated-text .letter {
+        font-size: 42px;
+        line-height: 60px;
+      }
+      .key-highlights .animated-text .letter {
+        font-size: 42px;
+        line-height: 60px;
+      }
+      .key-highlights .key-highlights-inner .key-highlights-card h3{
+          font-size: 20px;
+          text-align: start;
+      }
+       .key-highlights .key-highlights-inner .key-highlights-card p{
+          font-size: 15px;
+          text-align: start;
+      }
+          .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card.c-3{
+      transform: translateY(-50px);
+  }
+          .Who-Will-Meet .Who-Will-Meet-inner .Who-Will-Meet-card.c-5{
+      transform: translateY(-55px);
+  }
+  
+  
+     .key-highlights .key-highlights-inner .key-highlights-card {
+      min-height: 175px;
+      
+  }
+  .key-highlights .key-highlights-inner .row>*{
+      padding-left: 5px;
+      padding-right:5px;
+  }
+  .key-highlights .key-highlights-inner .key-highlights-card{
+      column-gap: 10px;
+  }
+  .key-highlights .key-highlights-inner .key-highlights-card .key-highlights-card-img {
+      width: 90px;
+  }
+  
+  .event-feature .event-feature-title-top .animated-text .letter{
+      font-size: 42px;
+  }
+  .event-feature .event-feature-container .event-feature-card {
+         max-width: 240px;
+      padding: 15px 10px;
+  
+  }
+  /* Become Sponsor */
+    .sponcer-logo-container .sponcer-logo-box .sp-logo {
+                max-width: 138px;
+                width: 100%;
+            }
+
+            .Exhibit-Section {
+                padding-top: 100px;
+            }
+
+
+  /* FAQ */
+      .Faq-Section {
+                margin: 0px 10px;
+            }
+
+            .Faq-Section .bnr-common-title h1 {
+                font-size: 37px;
+            }
+
+            .Faq-Section .bnr-common-title .animated-text .letter {
+                font-size: 37px;
+            }
+        
+ 
+  /* Travel-Page */
+   /* explore-section */
+   .discover-section .bnr-common-title h1 {
+    font-size: 32px;
+    line-height: 46px;
+    margin-top: 30px;
+}
+
+.discover-section .bnr-common-title .animated-text .letter {
+    font-size: 32px;
+    line-height: 46px;
+}
+
+
+.explore-section .wave-top-right {
+    width: 240px;
+}
+
+.explore-section .wave-bottom-left {
+    width: 200px;
+}
+
+.explore-section .wave-bottom-left {
+    left: -15px;
+}
+
+.explore-section .explore-tip {
+    font-size: 12px;
+}
+
+/* accommodation-section */
+.accommodation-section .card-container h4 {
+    font-size: 22px;
+}
+
+.accommodation-section .card p {
+    font-size: 12px;
+    width: 70%;
+}
+
+.accommodation-section .card::after {
+    width: 185px;
+    font-size: 10px;
+}
+
+.accommodation-section .card::before {
+    top: 24px;
+}
+
+
+   
+    
+}
+@media (max-width:576px){
+     /* All Page Banner Section */
+     .All-Page-Banner .BnrPage-Title h1 {
+        font-size: 23px;
+    }
+
+  
+
+    /* Sponsors-page */
+    .Sponsor-title .animated-text .letter {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .Elite-sponsor h1 {
+    font-size: 25px;
+
+}
+.Elite-sponsor .Sponsor-title .Sponsor-Titleline{
+    display:none;
+}
+
+/* whyAttend */
+.Who-Will-Meet .animated-text .letter  {
+    font-size: 30px;
+    line-height: 40px;
+}
+ .key-highlights .animated-text .letter  {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+   .key-highlights .key-highlights-inner .key-highlights-card {
+    min-height: 120px;
+    
+}
+.key-highlights .key-highlights-inner .key-highlights-card h3{
+    font-size: 18px;
+}
+.key-highlights .key-highlights-inner .key-highlights-card p{
+    font-size: 14px;
+}
+.event-feature .event-feature-title-top .animated-text .letter{
+    font-size: 30px;
+}
+.event-feature .event-feature-title-bottom h3{
+    font-size:16px;
+    line-height: 24px;
+}
+.event-feature .event-feature-left-content{
+    padding: 0px 20px;
+}
+.event-feature .event-feature-container .event-feature-card {
+    max-width: 360px;
+    padding: 15px 10px;
+    
+}
+
+/* FAQ */
+ .Faq-Section {
+                margin-top: 50px;
+            }
+
+            .Faq-Section .bnr-common-title h1 {
+                font-size: 33px;
+            }
+
+            .Faq-Section .bnr-common-title .animated-text .letter {
+                font-size: 33px;
+            }
+
+            .Faq-Section .faq-slider .row {
+                padding: 0px;
+            }
+
+            .Faq-Section .faq-sec-inner .faq-slider h4 {
+                font-size: 18px;
+            }
+            .Faq-Section .accordion-button{
+                padding:15px;
+                font-size: 14px;
+            }
+
+
+            .Faq-Section .accordion-flush .accordion-item .accordion-button.collapsed {
+                font-size: 14px;
+            }
+
+            .Faq-Section .accordion-flush .accordion-item .accordion-body p {
+                font-size: 14px;
+            }
+
+/* Become Sponsor */
+    .Exhibit-Section .Exhibit-inner {
+                padding: 40px 20px;
+            }
+
+            .Exhibit-Section .Section-title .bnr-common-title {
+
+                margin-bottom: 30px;
+            }
+
+            .Exhibit-Section .abt-btn {
+                margin-top: 0;
+
+            }
+
+            .Exhibit-Section .Section-title .bnr-common-title h1 {
+                font-size: 30px;
+            }
+
+            .Exhibit-Section .Section-title .bnr-common-title .animated-text .letter {
+                font-size: 30px;
+            }
+.spnr-register-section .bnr-common-title h1,.spnr-register-section .animated-text .letter {
+      font-size: 30px;
+
+}
+            .spnr-register-section .register-sec-inner {
+                padding: 20px;
+
+            }
+
+            .sponcer-logo-container .sponcer-section-title .bnr-common-title h1 {
+                font-size: 30px;
+            }
+
+            .sponcer-logo-container .sponcer-section-title .bnr-common-title .animated-text .letter {
+                font-size: 30px;
+            }
+
+            .sponcer-logo-container .sponcer-section-title {
+                padding-bottom: 20px;
+            }
+
+/* Travel-Page */
+  /* explore-section */
+  .discover-section .bnr-common-title h1 {
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.discover-section .bnr-common-title .animated-text .letter {
+    font-size: 30px;
+    line-height: 37px;
+}
+
+/* explore-section */
+.explore-section .explore-card {
+    width: 100%;
+}
+
+.explore-section .bnr-common-title h1 {
+    font-size: 24px;
+    line-height: 45px;
+    padding: 0;
+}
+
+.explore-section .bnr-common-title .letter {
+    font-size: 24px;
+    line-height: 45px;
+}
+
+.explore-section .bnr-common-title {
+    text-align: left;
+}
+
+/* transport-section */
+.transport-section .bnr-common-title h1 {
+    font-size: 35px;
+    line-height: 45px;
+}
+
+.transport-section .bnr-common-title .letter {
+    font-size: 35px;
+    line-height: 45px;
+}
+
+.transport-section .animated-text .letter {
+    font-size: 35px;
+}
+
+.transport-section .transport-text {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.transport-section .transport-card {
+    flex: 0 0 100%;
+}
+
+/* accommodation-section */
+.accommodation-section .bnr-common-title h1 {
+    font-size: 35px;
+    line-height: 45px;
+}
+
+.accommodation-section .bnr-common-title .letter {
+    font-size: 35px;
+    line-height: 45px;
+}
+
+.accommodation-section .accommodation-tip {
+    padding: 0 30px;
+    margin-top: 25px;
+}
+
+.accommodation-section .card::after {
+    width: 105px;
+    font-size: 8px;
+}
+
+.accommodation-section .card::before {
+    top: 14px;
+}
+
+.accommodation-section .card {
+    height: 100px;
+}
+
+.accommodation-section .card .card-container {
+    height: 100px;
+}
+
+/* tips-section */
+.tips-section .bnr-common-title h1 {
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.tips-section .bnr-common-title .letter {
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.tips-section .tips-list li {
+    font-size: 14px;
+}
+
+.tips-section .tips-list {
+    padding: 10px 30px;
+}
+
+}
