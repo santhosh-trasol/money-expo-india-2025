@@ -88,12 +88,12 @@
     <!-- End Header Top	 -->
 
     <!-- Header Menu -->
-    <header id="header">
+     <header id="header">
         <div class="container">
             <div class="Header-inner">
                 <a class="Web-Logo" href="index.html">
-                    <img src="./assets/image/Logo/MEI-Logo-White-DV.png" alt="MoneyExpo Logo">
-                    <img src="./assets/image/Logo/MEI-Logo-White-DV.png" alt="MoneyExpo Logo">
+                    <img src="./assets/image/Logo/MEI-Logo-White-DV.png" alt="MoneyExpo Logo" />
+                    <img src="./assets/image/Logo/MEI-Logo-White-DV.png" alt="MoneyExpo Logo" />
                 </a>
 
                 <!-- Website Header -->
@@ -107,12 +107,11 @@
                             <li><a class="dropdown-item Submenu-line" href="whyAttend.html">Why Attend</a></li>
                             <li><a class="dropdown-item Submenu-line" href="Agenda.html">Agenda</a></li>
                             <li><a class="dropdown-item Submenu-line" href="Floorplan.html">Floor Plan</a></li>
-
                         </ul>
                     </li>
                     <li><a href="Speaker.html">Speakers</a></li>
                     <li><a href="Sponsor.html">Sponsors</a></li>
-                    <!-- <li><a href="Partner.html">Partners</a></li> -->
+                    <!-- <li><a href="#partner">Partners</a></li> -->
                     <li class="main-menu">
                         <a class="dropdown-toggle" role="button" id="EventDropdown" data-bs-toggle="dropdown"
                             aria-expanded="false">More</a>
@@ -123,8 +122,6 @@
                             <li><a class="dropdown-item Submenu-line" href="travel.html">Travel & Stay</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Login &#8614;
-                        </a></li>
                     <!-- <li>
                         <div class="Header-flag">
                             <a class="Hdr-flag-img" href="index.html">
@@ -143,9 +140,9 @@
                         <a href="#" class="Section-btn White-btn">Register To Visit</a>
                         <div class="button-outline Blue-btn"></div>
                     </li>
-
-
-
+                    <li>
+                        <a href="#" class="header-login-btn">Login &nbsp;<i class="fa-solid fa-circle-user"></i> </a>
+                    </li>
                 </ul>
                 <!-- End Website Header -->
 
@@ -153,7 +150,7 @@
                 <div class="Mobile-Header">
                     <nav class="Mbl-nav">
                         <a class="Mbl-Logo" href="index.html">
-                            <img src="./assets/image/Logo/MEI-Logo-White-DV.png" alt="MoneyExpo Logo">
+                            <img src="./assets/image/Logo/MEI-Logo-White-DV.png" alt="MoneyExpo Logo" />
                         </a>
                         <ul class="Mbl-menu">
                             <li><a class="Menu-Close" href="index.html">Home</a></li>
@@ -169,7 +166,7 @@
                             </li>
                             <li><a class="Menu-Close" href="Speaker.html">Speakers</a></li>
                             <li><a class="Menu-Close" href="Sponsor.html">Sponsors</a></li>
-                            <!-- <li><a class="Menu-Close" href="Partner.html">Partners</a></li> -->
+                            <!-- <li><a class="Menu-Close" href="#partner">Partners</a></li> -->
                             <li>
                                 <a class="Mblmenu-item">More<i class="fa-solid fa-angle-down"></i></a>
                                 <ul class="Mblmenu-collapse" aria-expanded="false">
@@ -179,7 +176,6 @@
                                     <li><a class="Menu-Close" href="travel.html">Travel & Stay</a></li>
                                 </ul>
                             </li>
-                            <li><a class="Menu-Close" href="#">Login</a></li>
                             <li class="Hdr-Webbtn">
                                 <a href="Become-sponsor.html" class="Section-btn Gradient-btn">Become Sponsor</a>
                                 <div class="button-outline"></div>
@@ -188,7 +184,10 @@
                                 <a href="#" class="Section-btn White-btn">Register To Visit</a>
                                 <div class="button-outline Blue-btn"></div>
                             </li>
-
+                            <li>
+                                <a href="#" class="header-login-btn Menu-Close">Login &nbsp;<i
+                                        class="fa-solid fa-circle-user"></i> </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -248,29 +247,46 @@
                                     </div>
                                 </div>
                                 <div class="event-feature-container">
-                                    <div class="event-feature-card">
-                                        <h3>Expert-Led Sessions</h3>
-                                        <p>Market leaders share actionable insights and trends</p>
-                                    </div>
-                                    <div class="event-feature-card">
-                                        <h3>Exhibitor Showcase </h3>
-                                        <p>Discover the latest in fintech, trading, and wealth solutions.</p>
-                                    </div>
-                                    <div class="event-feature-card">
-                                        <h3>Networking Lounges</h3>
-                                        <p>Build connections with industry professionals.</p>
-                                    </div>
-                                    <div class="event-feature-card">
-                                        <h3>Startup Zone</h3>
-                                        <p>Meet the disruptors shaping the future.</p>
-                                    </div>
-                                    <div class="event-feature-card">
-                                        <h3>Investment & Growth Strategies Panel</h3>
-                                        <p>Learn how to scale and invest wisely in today’s market.</p>
+                                    <div class="row gy-4">
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="event-feature-card">
+                                                <h3>Expert-Led Sessions</h3>
+                                                <p>Market leaders share actionable insights and trends</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                                <div class="event-feature-card">
+                                                    <h3>Expert-Led Sessions</h3>
+                                                    <p>Market leaders share actionable insights and trends</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-12">
+                                                <div class="event-feature-card">
+                                                    <h3>Exhibitor Showcase </h3>
+                                                    <p>Discover the latest in fintech, trading, and wealth solutions.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-12">
+                                                <div class="event-feature-card">
+                                                    <h3>Networking Lounges</h3>
+                                                    <p>Build connections with industry professionals.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-12">
+                                                <div class="event-feature-card">
+                                                    <h3>Startup Zone</h3>
+                                                    <p>Meet the disruptors shaping the future.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-12">
+                                                <div class="event-feature-card">
+                                                    <h3>Investment & Growth Strategies Panel</h3>
+                                                    <p>Learn how to scale and invest wisely in today’s market.</p>
+                                                </div>
+                                            </div>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -311,47 +327,47 @@
                     <p class="Who-Will-Meet-title-txt">A dynamic gathering of minds and markets</p>
                 </div>
                 <div class="Who-Will-Meet-inner">
-                    <div class="row justify-content-evenly">
-                        <div class="Who-Will-Meet-card c-1">
+                    <div class="row gy-4 justify-content-center">
+                        <div class="col-lg col-md-4 col-6"><div class="Who-Will-Meet-card">
                             <div class="Who-Will-Meet-card-content">
                                 <p><span>Brokers & Traders</span> exploring new strategies</p>
                             </div>
                             <div class="Who-Will-Meet-img">
                                 <img src="./Drawing (1).png" alt="">
                             </div>
-                        </div>
-                        <div class="Who-Will-Meet-card c-2">
+                        </div></div>
+                        <div class="col-lg col-md-4 col-6"><div class="Who-Will-Meet-card">
                             <div class="Who-Will-Meet-card-content">
                                 <p><span>Investors & VCs </span> seeking the next big opportunity</p>
                             </div>
                             <div class="Who-Will-Meet-img">
                                 <img src="./Drawing (1).png" alt="">
                             </div>
-                        </div>
-                        <div class="Who-Will-Meet-card c-3">
+                        </div></div>
+                        <div class="col-lg col-md-4 col-6"><div class="Who-Will-Meet-card">
                             <div class="Who-Will-Meet-card-content">
                                 <p><span>Fintech Innovators</span> pushing boundaries with new tech</p>
                             </div>
                             <div class="Who-Will-Meet-img">
                                 <img src="./Drawing (1).png" alt="">
                             </div>
-                        </div>
-                        <div class="Who-Will-Meet-card c-4">
+                        </div></div>
+                        <div class="col-lg col-md-4 col-6"><div class="Who-Will-Meet-card">
                             <div class="Who-Will-Meet-card-content">
                                 <p><span>Advisors & Analysts</span> interpreting market trends</p>
                             </div>
                             <div class="Who-Will-Meet-img">
                                 <img src="./Drawing (1).png" alt="">
                             </div>
-                        </div>
-                        <div class="Who-Will-Meet-card c-5 ">
+                        </div></div>
+                        <div class="col-lg col-md-4 col-6"><div class="Who-Will-Meet-card">
                             <div class="Who-Will-Meet-card-content">
                                 <p><span>Tech Enthusiasts bringing</span> AI, blockchain, and automation to life</p>
                             </div>
                             <div class="Who-Will-Meet-img">
                                 <img src="./Drawing (1).png" alt="">
                             </div>
-                        </div>
+                        </div></div>
                     </div>
                 </div>
             </div>
@@ -510,26 +526,49 @@
     <!-- ==== End Back to Top Section ==== -->
 
     <!-- ==== Footer Section ==== -->
-    <section class="Footer-Section wow fadeIn" data-wow-delay=".6s"
-        style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+    <section class="Footer-Section">
         <div class="container">
             <div class="Footer-Inner">
                 <div class="Ftr-sitelogo">
-                    <a href="index.html">
-                        <img src="./assets/image/Logo/MEI-Logo-White-DV.png" alt="Organized Logo"></a>
+                    <a href="index.html"> <img src="./assets/image/Logo/MEI-Logo-White-DV.png"
+                            alt="Organized Logo" /></a>
+                </div>
+                <div class="Ftr-media">
+                    <p style="margin: 0px;">18+ only</p>
+                    <div class="Ftr-social">
+                        <a class="Ftrsocial-item" href="https://www.facebook.com/MoneyExpoGlobal" target="_blank">
+                            <img src="./assets/image/SVGs/Ftr-facebook.svg" alt="Facebook" />
+                        </a>
+                        <a class="Ftrsocial-item" href="https://twitter.com/MoneyExpoGloba1" target="_blank">
+                            <img src="./assets/image/SVGs/Ftr-twitter.svg" alt="Twitter" />
+                        </a>
+                        <a class="Ftrsocial-item" href="https://www.instagram.com/moneyexpoglobal/?next=%2F"
+                            target="_blank">
+                            <img src="./assets/image/SVGs/Ftr-instagram.svg" alt="Instagram" />
+                        </a>
 
+                        <a class="Ftrsocial-item"
+                            href="https://www.linkedin.com/company/money-expo-2023/?viewAsMember=true" target="_blank">
+                            <img src="./assets/image/SVGs/Ftr-linkedin.svg" alt="Linkedin" />
+                        </a>
+
+                        <a class="Ftrsocial-item" href="https://www.youtube.com/channel/UCJY8sVupCa4_Des9yY92DvQ"
+                            target="_blank">
+                            <img src="./assets/image/SVGs/Ftr-youtube.svg" alt="Youtube" />
+                        </a>
+                    </div>
                 </div>
                 <div class="Ftr-logo">
                     <div class="Ftrlogo-details">
-                        <h4 style="margin: 0px;">Organized By</h4> <br>
+                        <h4 style="margin: 0px;">Organized By</h4>
+                        <br />
                         <div class="Ftr-organized">
                             <div class="footer-right-logo">
-                                <a href="https://trasoltech.com/">
-                                    <img src="./assets/image/Logo/trasol-logo.png" width="100px" height="45px"
-                                        alt="Organized Logo"></a>
-                                <a href="https://hqmena.com/">
-                                    <img src="./assets/image/Logo/Footer-Logo.png" width="100px" height="45px"
-                                        alt="Organized Logo"></a>
+                                <a href="https://trasoltech.com/"> <img src="./assets/image/Logo/trasol-logo.png"
+                                        alt="Organized Logo" /></a>
+
+                                <a href="https://hqmena.com/"> <img src="./assets/image/Logo/Footer-Logo.png"
+                                        alt="Organized Logo" /></a>
                             </div>
                         </div>
                     </div>
@@ -540,42 +579,21 @@
                         <p>Contact Us</p>
                     </div>
                     <ul class="Menus-list">
-                        <li>Exhibition Inquiry<br>
+                        <li>
+                            Exhibition Inquiry<br />
                             <a href="mailto:sales@hqmena.com">sales@hqmena.com</a>
                         </li>
-                        <li>Media/Marketing Inquiry<br>
+                        <li>
+                            Media/Marketing Inquiry<br />
                             <a href="mailto:marketing@hqmena.com">marketing@hqmena.com</a>
                         </li>
-                        <li>Speaker Inquiry<br>
+                        <li>
+                            Speaker Inquiry<br />
                             <a href="mailto:conference@hqmena.com">conference@hqmena.com</a>
                         </li>
                     </ul>
                 </div>
-                <div class="Ftr-media">
-                    <p style="margin: 0px;">18+ only</p>
-                    <div class="Ftr-social">
-                        <a class="Ftrsocial-item" href="https://www.facebook.com/MoneyExpoGlobal" target="_blank">
-                            <img src="./assets/image/SVGs/Ftr-facebook.svg" alt="Facebook">
-                        </a>
-                        <a class="Ftrsocial-item" href="https://twitter.com/MoneyExpoGloba1" target="_blank">
-                            <img src="./assets/image/SVGs/Ftr-twitter.svg" alt="Twitter">
-                        </a>
-                        <a class="Ftrsocial-item" href="https://www.instagram.com/moneyexpoglobal/?next=%2F"
-                            target="_blank">
-                            <img src="./assets/image/SVGs/Ftr-instagram.svg" alt="Instagram">
-                        </a>
 
-                        <a class="Ftrsocial-item"
-                            href="https://www.linkedin.com/company/money-expo-2023/?viewAsMember=true" target="_blank">
-                            <img src="./assets/image/SVGs/Ftr-linkedin.svg" alt="Linkedin">
-                        </a>
-
-                        <a class="Ftrsocial-item" href="https://www.youtube.com/channel/UCJY8sVupCa4_Des9yY92DvQ"
-                            target="_blank">
-                            <img src="./assets/image/SVGs/Ftr-youtube.svg" alt="Youtube">
-                        </a>
-                    </div>
-                </div>
                 <div class="Ftr-divider"></div>
                 <div class="Ftr-copyright">
                     <p>Copyright © 2025 Money Expo India. All Rights Reserved</p>
@@ -586,16 +604,19 @@
                 </div>
             </div>
             <div class="Ftr-disclaimer">
-                <p>Disclaimer : Money Expo India is organized for informational and educational purposes only. The
-                    views, opinions, and materials presented by speakers, exhibitors, or any other
-                    participants do not necessarily reflect the official policy or position of the organizers,
-                    sponsors, or affiliates of the Event. Participation in the Event does not constitute financial
-                    or
-                    investment advice, and attendees are advised to seek independent advice before making any
-                    investment or financial decisions. The organizers make no representations or
-                    warranties of any kind, express or implied, about the accuracy, reliability, or completeness of
-                    any information provided during the Event. All investments carry risks, and attendees
-                    are solely responsible for their financial decisions.</p>
+                <p>
+                    Disclaimer : Money Expo India is organized for informational and educational purposes only. The
+                    views, opinions, and materials presented by speakers, exhibitors, or any other participants do not
+                    necessarily reflect
+                    the official policy or position of the organizers, sponsors, or affiliates of the Event.
+                    Participation in the Event does not constitute financial or investment advice, and attendees are
+                    advised to seek independent
+                    advice before making any investment or financial decisions. The organizers make no representations
+                    or warranties of any kind, express or implied, about the accuracy, reliability, or completeness of
+                    any information
+                    provided during the Event. All investments carry risks, and attendees are solely responsible for
+                    their financial decisions.
+                </p>
             </div>
         </div>
     </section>
