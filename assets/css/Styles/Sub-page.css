@@ -2,6 +2,7 @@
 .All-Page-Banner {
     position: relative;
     overflow: hidden;
+    display: none;
 }
 
 .All-Page-Banner .Banner-Img {
@@ -35,10 +36,24 @@
 /* End All Page Common Banner Section */
 
 /* sponsor-page */
+.Sponsor-section {
+    background-color: #030225;
+}
 
 
 .Sponsor-title .bnr-common-title {
-    margin-bottom: 20px;
+    margin-bottom: 3rem;
+}
+
+.Sponsor-title .bnr-common-title h1 {
+    background-color: #ffff;
+}
+
+.Sponsor-title .animated-text::before {
+    top: -19%;
+    font-size: 4rem;
+    -webkit-text-stroke: 1.5px #efa50626 !important;
+
 }
 
 .Elite-sponsor h1 {
@@ -389,6 +404,10 @@
 
 }
 
+.event-feature-right img {
+    border-radius: 15px !important;
+}
+
 .event-feature .event-feature-right .event-feature-right-gal-img-2 {
     margin-top: 30px;
 }
@@ -404,7 +423,7 @@
     padding: 15px 20px;
     background: var(--color-Pink);
     border-radius: 7px 0 10px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    /* border: 1px solid rgba(255, 255, 255, 0.4); */
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
@@ -412,8 +431,8 @@
 .event-feature-card::after {
     position: absolute;
     content: "";
-    top: 10px;
-    left: 10px;
+    top: 6px;
+    left: 5px;
     width: 100%;
     height: 100%;
     background-color: transparent;
@@ -465,6 +484,7 @@
 
 .event-feature {
     position: relative;
+    background-color: #040a21;
 }
 
 .event-feature::before {
@@ -479,7 +499,7 @@
 }
 
 .event-feature .event-feature-title-top .bnr-common-title h1 {
-    background-color: var(--color-Blue);
+    background-color: #fff;
 }
 
 .event-feature .event-feature-title-top .animated-text .letter {
@@ -517,6 +537,30 @@
     font-weight: 600;
 }
 
+.event-feature-title-top p {
+    color: #fff;
+}
+
+.event-feature-title .animated-text::before {
+    content: none;
+}
+
+.event-feature-container .row .col-lg-6:nth-child(2) .event-feature-card,
+.event-feature-container .row .col-lg-6:nth-child(3) .event-feature-card {
+    background-color: var(--color-Electric-Yellow);
+}
+
+.event-feature-container .row .col-lg-6:nth-child(2) .event-feature-card::after,
+.event-feature-container .row .col-lg-6:nth-child(3) .event-feature-card::after {
+    border: 2px solid var(--color-Electric-Yellow) !important;
+
+}
+
+.event-feature-container .row .col-lg-6:nth-child(2) .event-feature-card h3,
+.event-feature-container .row .col-lg-6:nth-child(3) .event-feature-card h3 {
+    color: #000;
+}
+
 /* FAQ */
 .Faq-Section {
     background-image: url(./assets/image/image-gallery-index-section/manbg1.png);
@@ -524,13 +568,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    margin: 40px 50px 0px;
+    background-color: #08223b;
 }
 
 .Faq-Section .bnr-common-title h1 {
     font-size: 55px;
-    background-color: var(--color-Blue);
+    background-color: #fff;
+}
 
+.Faq-Section .bnr-common-title .animated-text::before {
+    color: transparent;
+    -webkit-text-stroke: 1.5px #ffd50012;
 }
 
 .Faq-Section .bnr-common-title .animated-text .letter {
@@ -547,10 +595,7 @@
 
 .Faq-Section .accordion-inner {
     padding-bottom: 30px;
-
-
 }
-
 
 .faq-sec-inner .faq-inner-btn {
     background: none;
@@ -560,46 +605,54 @@
 }
 
 .Faq-Section .nav-tabs {
-    gap: 12px 15px;
-    justify-content: center;
     overflow: hidden;
     border: 0px;
     margin: 30px 0px 0px;
+    border-bottom: 1px solid #dddddd21;
+    gap: 5px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
 
 
 .Faq-Section .nav-tabs .nav-link {
-    color: var(--color-black);
-    border: 2px solid black;
-    width: 250px;
-    border-radius: 10px;
+    color: #fff;
+    border: none;
+    width: fit-content;
+    border-radius: 0px;
     min-height: 60px;
     height: 100%;
     font-size: 16px;
     position: relative;
     overflow: hidden;
+    padding: 0.5rem;
+    text-wrap-mode: nowrap;
 }
 
 .Faq-Section .nav-tabs .nav-link::before {
     content: "";
     position: absolute;
     left: 0;
+    top: 40%;
     bottom: 0px;
-    background: var(--color-Pink);
     width: 100%;
-    height: 3px;
-    z-index: 5;
-    display: none;
+    height: 30%;
+    border-right: 1px solid #6463635b;
+}
+
+.Faq-Section .nav-tabs .nav-item:last-child .nav-link::before {
+    content: none;
 }
 
 .Faq-Section .nav-tabs .nav-link.active {
-    border-bottom: 2px solid var(--color-Pink);
-    background: var(--color-Blue);
-    color: white;
+    border-bottom: 3px solid var(--color-Electric-Yellow) !important;
+    background: transparent;
+    color: var(--color-Electric-Yellow);
+    font-weight: 600;
 }
 
-.Faq-Section .nav-tabs .nav-link.active::before {
+/* .Faq-Section .nav-tabs .nav-link.active::before {
     display: block;
 }
 
@@ -616,31 +669,38 @@
     background-image: none;
     content: '\f068';
     color: var(--color-Pink);
+} */
+
+
+.Faq-Section .accordion-flush .accordion-item .accordion-button.collapsed {
+    color: #fff !important;
+    position: relative;
+    border-bottom: 2px solid #7070702b;
+    background-color: #001931c4;
 }
 
 .Faq-Section .accordion-flush .accordion-item .accordion-button {
-    color: var(--color-Pink);
-    position: relative;
-    border-bottom: 2px solid #7070702b;
-    border-radius: 20px;
-
+    background-color: #001931c4;
+    color: var(--color-Electric-Yellow);
 }
 
 .Faq-Section .accordion-flush .accordion-item {
 
     border: none;
     padding: 0px;
-    border-radius: 50px;
+    background-color: transparent;
 }
 
 .Faq-Section .accordion-flush .accordion-item .accordion-body {
     border-bottom: 2px solid #7070702b;
-
+    background: #001429;
+    margin-bottom: .5rem;
 }
 
 .Faq-Section .accordion-flush .accordion-item .accordion-body p {
-    color: var(--color-black);
+    color: #fff !important;
     font-family: var(--font-Roboto);
+    margin-bottom: 0px;
 }
 
 .Faq-Section .accordion-button {
@@ -649,6 +709,10 @@
     font-size: 20px;
     font-family: var(--font-Poppins);
 
+}
+
+.Faq-Section .accordion-button::after {
+    background-color: var(--color-Electric-Yellow);
 }
 
 
@@ -669,10 +733,9 @@
 }
 
 
-.Faq-Section .faq-sec-inner .faq-slider h4 {
+.Faq-Section .faq-sec-inner .faq-slider h3 {
 
     color: var(--color-Pink);
-    font-size: 25px;
     padding: 20px 0px;
 }
 
@@ -689,14 +752,10 @@
 
 .Exhibit-Section .Exhibit-inner {
     padding: 80px 50px;
-    background: #e29a0033;
+    /* background: #e29a0033; */
     backdrop-filter: blur(50px);
-    border: 2px solid rgb(255 255 255 / 14%);
+    /* border: 2px solid #ffd500; */
     border-radius: 25px;
-}
-
-.Exhibit-Section .row {
-    row-gap: 30px;
 }
 
 .Exhibit-Section .Section-title {
@@ -743,32 +802,31 @@
 }
 
 .Exhibit-Section .Section-title p span {
-    background: #023b6d66;
+    background: #ffd50040;
     border: 1px solid rgb(255 255 255 / 13%);
     padding: 6px 20px;
     border-radius: 20px;
     display: inline-block;
-
-}
-
-.Exhibit-Section .row {
-    row-gap: 30px;
 }
 
 .Exhibit-Section .Exhbt-card {
     width: 100%;
     height: 100%;
-    background: var(--color-transparent);
-    border-bottom: 1px solid #ffffff24;
-    border-radius: 8px;
+    background: #ffffff0f;
+    border: 3px solid #0d0d0c;
+    border-radius: 0px;
+    place-content: center;
     padding: 1.2rem;
     transition: 0.3s;
 }
 
-.Exhibit-Section .Exhbt-card:hover {
+/* .Exhibit-Section .Exhbt-card:hover {
     transition: 0.3s;
-    box-shadow: rgb(200, 75, 75) 0px 8px 35px -7px;
-    transform: perspective(900px) translateY(-3%) rotateX(15deg) translateZ(0);
+    border-radius: 20px 0px;
+} */
+
+.Exhibit-inner .col-lg-6:nth-child(even) .Exhbt-card {
+    margin-top: 2rem;
 }
 
 .Exhibit-Section .Exhbt-card img {
@@ -811,7 +869,7 @@
 
 .spnr-register-section .register-sec-inner {
     padding: 40px;
-    background: var(--color-Blue);
+    background: var(--color-Dark-Blue);
     box-shadow: rgb(17 17 26 / 72%) 0px 8px 24px, rgb(17 17 26 / 14%) 0px 16px 56px, rgb(17 17 26 / 13%) 0px 24px 80px;
 }
 
@@ -1266,6 +1324,99 @@
 }
 
 
+/* speaker-page-styles */
+.speaker-page .India-Speakers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.speaker-page .India-Speaker-card {
+    max-width: 25%;
+}
+
+.speaker-form .bnr-common-title h1 {
+    background: var(--color-Blue) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.speaker-form .form-label {
+    font-weight: 600;
+}
+
+.speaker-form .form-control {
+    border-radius: 0px;
+    padding: .5rem;
+}
+
+.speaker-form .view-all-btn-section {
+    position: relative;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.speaker-form .view-all-btn-section .button-outline {
+    width: 155px;
+}
+
+/* speaker-page-styles-end */
+
+/* terms-and-condition-styles */
+.terms-section {
+    background-color: #000;
+}
+
+.terms-section .bnr-common-title h1 {
+    font-size: 60px;
+    line-height: 75px;
+    font-family: var(--font-Poppins);
+    overflow: hidden;
+    background: var(--color-Ghost-White);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    margin-bottom: 0px !important;
+}
+
+.terms-section .bnr-common-title .animated-text::before {
+    -webkit-text-stroke: 1.5px #ffc10721;
+}
+
+.terms-section .Section-title {
+    margin-bottom: 2rem;
+}
+.terms-section p{
+    color: #fff;
+    text-align: justify;
+}
+
+.terms-section p span{
+    color: var(--c);
+}
+
+.terms-main-text{
+    font-style: italic;
+    font-weight: 600;
+    color: var(--color-Electric-Yellow);
+    margin-bottom: 2rem;
+}
+
+
+
+.term-title {
+    background: var(--color-Electric-Yellow);
+    color: #000;
+    text-align: center;
+    padding: 10px 0 10px;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--font-Montserrat) !important;
+}
+
+/* terms-and-condition-styles-end */
+
 /* Media Query */
 
 /* whyAttend */
@@ -1359,6 +1510,15 @@
     .Faq-Section .accordion-button {
         font-size: 17px;
     }
+
+    .Faq-Section .nav-tabs {
+        margin: 30px 0px 30px;
+        border-bottom: none;
+    }
+
+    .Faq-Section .nav-tabs .nav-link {
+        min-height: inherit;
+    }
 }
 
 @media (max-width:992px) {
@@ -1373,23 +1533,16 @@
     }
 
 
+
     /* whyAttend */
 
     .event-feature::before {
         display: none;
     }
 
-    .event-feature .event-feature-left-content {
-        background-color: rgb(221, 221, 220);
-    }
-
     .event-feature .event-feature-right {
         margin-top: 0px;
 
-    }
-
-    .event-feature {
-        background-color: rgb(221, 221, 220);
     }
 
     .event-feature .event-feature-container .event-feature-card {
@@ -1558,6 +1711,15 @@
         margin-top: 20px;
     }
 
+    /*  */
+    .event-feature-container .row .col-lg-6:nth-child(even) {
+        margin-top: 1.5rem;
+    }
+
+    .event-feature-card {
+        margin-inline: auto;
+    }
+
 
 }
 
@@ -1638,9 +1800,6 @@
 
 
     /* FAQ */
-    .Faq-Section {
-        margin: 0px 10px;
-    }
 
     .Faq-Section .bnr-common-title h1 {
         font-size: 37px;
@@ -1700,7 +1859,36 @@
         top: 24px;
     }
 
+    /* speaker-page-section */
+    .speaker-page .India-Speaker-card {
+        max-width: 33% !important;
+    }
 
+    /* speaker-page-section-end */
+
+    /* terms-and-condition */
+    .terms-section .bnr-common-title h1 {
+        font-size: 2.5rem;
+    }
+
+    /* terms-and-condition-end */
+
+    /* animated-text-tab */
+    .animated-text::before {
+        top: -34%;
+        font-size: 4rem;
+    }
+
+    .key-highlights .animated-text::before {
+        top: -74%;
+        font-size: 4rem;
+    }
+
+    .Faq-Section .bnr-common-title {
+        flex-wrap: wrap !important;
+    }
+
+    /* animated-text-tab-end */
 
 
 }
@@ -1773,8 +1961,19 @@
     }
 
     /* FAQ */
-    .Faq-Section {
-        margin-top: 50px;
+    .Faq-Section .nav-tabs {
+        margin: 30px 0px;
+        border-bottom: none !important;
+
+    }
+
+    .Faq-Section .nav-tabs .nav-link.active {
+        border-bottom: 2px solid var(--color-Electric-Yellow) !important;
+        font-weight: 500;
+    }
+
+    .Faq-Section .nav-tabs .nav-link {
+        min-height: inherit !important;
     }
 
     .Faq-Section .bnr-common-title h1 {
@@ -1961,4 +2160,35 @@
         padding: 10px 30px;
     }
 
+    /* speaker-page-section */
+    .speaker-page .India-Speaker-card {
+        max-width: 49% !important;
+    }
+
+    /* speaker-page-section-end */
+    /* terms-and-condition */
+    .terms-section .bnr-common-title h1 {
+        font-size: 1.3rem;
+    }
+
+    /* terms-and-condition-end */
+
+    /* animate-text-mobile */
+    .speaker-form .animated-text::before {
+        top: -16%;
+        font-size: 2rem;
+    }
+
+    /* animate-text-mobile-end */
+
+}
+
+@media (max-width:426px) {
+
+    /* speaker-page-section */
+    .speaker-page .India-Speaker-card {
+        max-width: 100% !important;
+    }
+
+    /* speaker-page-section-end */
 }
