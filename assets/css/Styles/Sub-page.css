@@ -40,9 +40,14 @@
     background-color: #030225;
 }
 
-
-.Sponsor-title .bnr-common-title {
-    margin-bottom: 3rem;
+.Sponsor-section p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+    font-family: var(--font-Roboto);
+    text-align: center !important;
+    margin-bottom: 2rem;
 }
 
 .Sponsor-title .bnr-common-title h1 {
@@ -572,17 +577,12 @@
 }
 
 .Faq-Section .bnr-common-title h1 {
-    font-size: 55px;
     background-color: #fff;
 }
 
 .Faq-Section .bnr-common-title .animated-text::before {
     color: transparent;
     -webkit-text-stroke: 1.5px #ffd50012;
-}
-
-.Faq-Section .bnr-common-title .animated-text .letter {
-    font-size: 55px;
 }
 
 .Faq-Section .faq-slider .row {
@@ -612,6 +612,7 @@
     gap: 5px;
     flex-wrap: nowrap;
     overflow-x: auto;
+    justify-content: center;
 }
 
 
@@ -762,12 +763,6 @@
     margin-bottom: 30px;
 }
 
-.Exhibit-Section .Section-title .bnr-common-title h1 {
-    font-size: 55px;
-
-
-}
-
 .Exhibit-Section .Section-title .bnr-common-title {
     justify-content: left;
     margin-bottom: 15px;
@@ -802,9 +797,11 @@
 }
 
 .Exhibit-Section .Section-title p span {
-    background: #ffd50040;
+    background: #ffd500f0;
     border: 1px solid rgb(255 255 255 / 13%);
     padding: 6px 20px;
+    color: #000;
+    font-weight: 500;
     border-radius: 20px;
     display: inline-block;
 }
@@ -813,7 +810,7 @@
     width: 100%;
     height: 100%;
     background: #ffffff0f;
-    border: 3px solid #0d0d0c;
+    border: 3px solid #414141;
     border-radius: 0px;
     place-content: center;
     padding: 1.2rem;
@@ -852,25 +849,20 @@
 
 .spnr-register-section .bnr-common-title {
     justify-content: left;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .spnr-register-section .bnr-common-title h1 {
     background: var(--color-Blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 55px;
 
-}
-
-.spnr-register-section .animated-text .letter {
-    font-size: 55px;
 }
 
 .spnr-register-section .register-sec-inner {
     padding: 40px;
-    background: var(--color-Dark-Blue);
-    box-shadow: rgb(17 17 26 / 72%) 0px 8px 24px, rgb(17 17 26 / 14%) 0px 16px 56px, rgb(17 17 26 / 13%) 0px 24px 80px;
+    background: #ffffff;
+    box-shadow: rgb(2 57 106) 0px 3px 12px;
 }
 
 .hs-form-6b522deb-e1a2-4078-8733-5a692722bb28_41e9d0f8-f036-4132-b289-b51f12a40737 .hs-form-field label:not(.hs-error-msg) {
@@ -884,10 +876,6 @@
 
 .sponcer-logo-container .sponcer-section-title {
     padding-bottom: 50px;
-}
-
-.sponcer-logo-container .sponcer-section-title .bnr-common-title h1 {
-    font-size: 55px;
 }
 
 
@@ -1319,29 +1307,68 @@
     object-fit: cover;
 }
 
+/* floorplan-styles */
 .floorplan {
-    background: var(--color-black);
+    background: var(--color-Dark-Blue);
 }
+
+.floorplan-title .bnr-common-title {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    margin-bottom: 1rem;
+}
+
+/* floorplan-styles-end */
+
 
 
 /* speaker-page-styles */
+
+.speaker-page.India-Speaker-Section {
+    background: #fff !important;
+}
+
 .speaker-page .India-Speakers {
     display: flex;
     flex-wrap: wrap;
+}
+
+.speaker-page.India-Speaker-Section .India-Speaker-Title .bnr-common-title h1 {
+    background: var(--color-Blue);
+    font-size: 56px;
+    line-height: 70px;
+    font-family: var(--font-Poppins);
+    overflow: hidden;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .speaker-page .India-Speaker-card {
     max-width: 25%;
 }
 
+.speaker-form {
+    background: radial-gradient(circle, rgb(3, 0, 100) -56%, rgba(0, 0, 0, 1) 100%);
+}
+
 .speaker-form .bnr-common-title h1 {
-    background: var(--color-Blue) !important;
+    background: var(--color-white) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
 }
 
+.speaker-form .bnr-common-title .animated-text::before {
+    -webkit-text-stroke: 1.5px #eaeaea12;
+}
+
+.speaker-form-text {
+    color: var(--color-Electric-Yellow);
+}
+
 .speaker-form .form-label {
     font-weight: 600;
+    color: var(--color-Ghost-White);
 }
 
 .speaker-form .form-control {
@@ -1385,16 +1412,17 @@
 .terms-section .Section-title {
     margin-bottom: 2rem;
 }
-.terms-section p{
+
+.terms-section p {
     color: #fff;
     text-align: justify;
 }
 
-.terms-section p span{
+.terms-section p span {
     color: var(--c);
 }
 
-.terms-main-text{
+.terms-main-text {
     font-style: italic;
     font-weight: 600;
     color: var(--color-Electric-Yellow);
@@ -1800,6 +1828,10 @@
 
 
     /* FAQ */
+
+    .Faq-Section .nav-tabs {
+        justify-content: start;
+    }
 
     .Faq-Section .bnr-common-title h1 {
         font-size: 37px;
